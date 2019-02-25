@@ -2,10 +2,10 @@
 redis:
   kong:
     database: 6
-    password: admin
+    password: master
     sentinel:
       master: mymaster
-      nodes: 'node.td-k8s.com:24379'
+      nodes: '10.103.1.149:6379'
     pool:
       maxTotal: 200
       maxIdle: 200
@@ -20,7 +20,7 @@ redis:
 database:
   kongadmin:
       read:
-        url: jdbc:mysql://10.100.11.75:3306/kong_admin_dev?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&useSSL=false
+        url: jdbc:mysql://10.100.11.75:3306/kong_aaa_dev?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&useSSL=false
         username: root
         password: root
         #连接池的配置信息
@@ -39,7 +39,7 @@ database:
         type: com.alibaba.druid.pool.DruidDataSource
         driverClassName: com.mysql.jdbc.Driver
       write:
-        url: jdbc:mysql://10.100.11.75:3306/kong_admin_dev?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&useSSL=false
+        url: jdbc:mysql://10.100.11.75:3306/kong_aaa_dev?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&useSSL=false
         username: root
         password: root
         #连接池的配置信息
