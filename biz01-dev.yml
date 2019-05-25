@@ -1,0 +1,8 @@
+spring:
+  rabbitmq:
+    host: 123.207.67.174
+    port: 5672
+    username: guest
+    password: guest
+girl: 
+  name: fan17
