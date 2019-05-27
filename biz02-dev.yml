@@ -1,7 +1,6 @@
 spring:
   zipkin:
-    service:
-      name: http://ZIPKINSERVER
+    base-url: http://localhost:8805
 girl: 
   name: fan117
 server:
