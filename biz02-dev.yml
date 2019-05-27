@@ -2,3 +2,6 @@ girl:
   name: fan117
 server:
   port: 8802
+spring:
+  zipkin:
+    base-url: http://zipkinserver
