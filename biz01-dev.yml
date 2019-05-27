@@ -1,7 +1,7 @@
 spring:
   zipkin:
     service:
-      name: zipkinserver
+      name: ZIPKINSERVER
 girl: 
   name: fan17
 server:
